@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          search-paths: config
+          uri: https://github.com/KKsmall/aispringcloud.git
+          username: KKsmall
+          password: liujin6966453
+eureka:
+  client:
+    service-url:
+      defualtZone: http://localhost:8761/eureka/

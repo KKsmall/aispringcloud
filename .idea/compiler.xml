@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloudconfigclient" />
+        <module name="cloudconfigserver" />
         <module name="eurekaclient" />
         <module name="eurekaserver" />
         <module name="feign" />
@@ -24,6 +26,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aispringcloud" options="-parameters" />
+      <module name="cloudconfigclient" options="-parameters" />
+      <module name="cloudconfigserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
