@@ -1,0 +1,15 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: getway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    #这里的provider不是固定的，对应的是你要路由的哪个服务的配置文件中的名字,之后接口不用直接请求真正接口
+    #直接请求zuul网关地址，如果地址后面是/p开头的会自动路由给应用名字设置为provider的服务
+    #如http://localhost:8030/p/student/findAll
+    provider: /p/**

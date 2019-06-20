@@ -1,0 +1,10 @@
+#这个是作为远程配置中心的文件，提交在远程仓库中，下面的内容是给别人读取的配置
+server:
+  port: 8070
+eureka:
+  client:
+    server-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: configclient
